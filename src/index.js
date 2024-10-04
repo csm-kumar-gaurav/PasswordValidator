@@ -1,3 +1,5 @@
+
+// Variables declaration
 let passInput = document.getElementById("password");
 let letter = document.getElementById("letter");
 let capital = document.getElementById("capital");
@@ -7,7 +9,7 @@ let length = document.getElementById("length");
 
 /*
   When mouse cursor is PLACED inside "password input field"
-    - all password validation condition strings are not displayed -
+    - all password validation strings are displayed -
 */
 passInput.onfocus = function() {
   document.getElementById("message").style.display = "block";
@@ -16,7 +18,7 @@ passInput.onfocus = function() {
 
 /*
   When mouse cursor is REMOVED from "password input field"
-    - all password validation condition strings are not displayed -
+    - all password validation strings are NOT displayed -
 */
 passInput.onblur = function() {
   document.getElementById("message").style.display = "none";
